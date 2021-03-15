@@ -7,7 +7,7 @@ WARNING: NE PAS OUBLIER DE MENTIONNER LES DEUX NOMS SI VOUS ETES EN BINOME!
 
 #Perret Pierre-Yves# et #Augereau Yan#
 
-Commentaires éventuels des étudiants : #XXXXXX#
+Commentaires éventuels des étudiants : #X#
 
 ## Pré-requis 
 
