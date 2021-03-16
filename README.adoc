@@ -113,10 +113,8 @@ Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombe
 
 _L'architecture hexagonale est un patron d'architecture utilisé dans le domaine de la conception des logiciels. Elle s'appuie sur 3 grands principes :
 * Séparer explicitement User-side, Business-Logic et Server-Side
-* Les dépendances vont vers Business-Logic 
+* Les dépendances vont vers Business-Logic
 * On isole les frontières par des Ports et Adapters_
-
-
 
 Compléter ce code avec une fonctionnalité de création de `TodoItem`  persisté en base et appelé depuis un endpoint REST `POST /todos` qui :
 
@@ -134,7 +132,18 @@ _Temps estimé : 20 mins_
 
 *Quels types de tests devra-t-on écrire pour les adapteurs ?* 
 
+_Pour les adapteurs, nous allons écrire des tests unitaires_
+
 *Que teste-on dans ce cas ?*
+
+_Nous allons donc créer plusieurs items avec des deadlines différentes :
+* (1) Un item avec une deadline dans 23h59m
+* (2) Un item avec une deadline dans 24h
+* (3) Un item avec une deadline dans 24h01m
+* (4) Un item avec une dealdine dans 0h
+* (5) Un item avec une deadline dans 100h
+
+L'item (2), (4) et (5) auront le flag LATE.
 
 *S'il vous reste du temps, écrire quelques uns de ces types de test.*
 
