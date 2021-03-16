@@ -43,7 +43,7 @@ _Non, le code n'est pas structuré en couches car l'ensemble des fichiers java s
 
 *Où se trouve le code métier (voir la règle de gestion RG 1) ?*
 
-_Le code métier se trouve dans le controller (TodoListController.java)._
+_Le code métier se trouve dans le controller (`TodoListController.java`)._
 
 *Cette règle est-elle facilement testable par un test unitaire ?*
 
@@ -56,7 +56,7 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 *Expliquer cette ligne de commande (y compris les options utilisées)*
 
 _Cette requête permet de lancer une base POSTGRES SQL en docker de façon interactive sur le port 5432.
-Explications : 
+.Explications : 
 * Docker run : Commande qui permet de lancer une base POSTGRES
 * it : mode interactif permet d'afficher un retour écrit dans le terminal
 * e : permet de spécifier une variable d'environnement. La variable d'environnement POSTGRES_PASSWORD prend la valeur password
@@ -67,6 +67,8 @@ Explications :
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
 
 *Pourquoi `todoItemRepository` est-il `null` ? Quelle est la meilleure façon de l'injecter ?*
+
+_Le `todoItemRepositery` est `null` car il y a un problème d'injection. La meilleure façon de l'injecter est de ajouter avant la méthode @objetc._
 
 * Modifier le code en conséquence.
 
