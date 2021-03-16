@@ -56,7 +56,7 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 *Expliquer cette ligne de commande (y compris les options utilisées)*
 
 _Cette requête permet de lancer une base POSTGRES SQL en docker de façon interactive sur le port 5432.
-.Explications : 
+Explications : 
 * Docker run : Commande qui permet de lancer une base POSTGRES
 * it : mode interactif permet d'afficher un retour écrit dans le terminal
 * e : permet de spécifier une variable d'environnement. La variable d'environnement POSTGRES_PASSWORD prend la valeur password
@@ -110,6 +110,12 @@ Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombe
   - la couche `domain` qui contient les entités (au sens DDD, pas au sens JPA). En général des classes complexes (méthodes riches, relations entre les entités)
 
 *Rappeler en quelques lignes les grands principes de l'architecture hexagonale.*
+
+_L'architecture hexagonale est un patron d'architecture utilisé dans le domaine de la conception des logiciels. Elle s'appuie sur 3 grands principes :
+* Séparer explicitement User-side, Business-Logic et Server-Side
+* Les dépendances vont vers Business-Logic
+* On isole les frontières par des Ports et Adapters
+_
 
 Compléter ce code avec une fonctionnalité de création de `TodoItem`  persisté en base et appelé depuis un endpoint REST `POST /todos` qui :
 
