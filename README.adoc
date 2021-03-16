@@ -55,14 +55,14 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 ```
 *Expliquer cette ligne de commande (y compris les options utilisées)*
 
-Cette requêt permet de lancer une base POSTGRES SQL en docker de façon interactive sur le port 5432.
+Cette requête permet de lancer une base POSTGRES SQL en docker de façon interactive sur le port 5432.
 Explications : 
 Docker run : Commande qui permet de lancer une base POSTGRES
-* it : mode interactif permet d'afficher un retour écrit dans le terminal
-* e : permet de spécifier une variable d'environnement. La variable d'environnement POSTGRES_PASSWORD prend la valeur password
-* POSTGRES_PASSWORD=password : permet de spécifier le mot de passe de la base POSTGRES SQL.
-* p 5432:5432 : permet de spécifier le port.
-* postgres : nom de la base POSTGRES SQL
+** it : mode interactif permet d'afficher un retour écrit dans le terminal
+** e : permet de spécifier une variable d'environnement. La variable d'environnement POSTGRES_PASSWORD prend la valeur password
+** POSTGRES_PASSWORD=password : permet de spécifier le mot de passe de la base POSTGRES SQL.
+** p 5432:5432 : permet de spécifier le port.
+** postgres : nom de la base POSTGRES SQL
 
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
 
