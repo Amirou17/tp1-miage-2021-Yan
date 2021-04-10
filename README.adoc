@@ -136,7 +136,7 @@ _Pour les adapteurs, nous allons écrire des tests d'intégrations_
 
 *Que teste-on dans ce cas ?*
 
-Dans ce cas, nous testons que l'ensemble de l'application fonctionnne correctmeent une fois que tous les parties (modules) soient assemblés.
+Dans ce cas, nous testons que l'ensemble de l'application fonctionnne correctement une fois que tous les parties (modules) soient assemblés.
 
 _Nous allons donc créer plusieurs items avec des deadlines différentes :
 * (1) Un item avec une deadline dans 23h59m
